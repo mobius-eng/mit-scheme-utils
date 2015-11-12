@@ -44,7 +44,7 @@
 (define-syntax dlist
   (syntax-rules ()
     ((dlist (?a ...) ?list-expr ?exprs ...)
-     (let ((lst ?list-expr)(?a #f) ...)
+     (let ((lst ?list-expr) (?a #f) ...)
        (dlist-int (?a ...) lst ?exprs ...)))))
 
 ;; Destructuring alist (destructuring assoc)
